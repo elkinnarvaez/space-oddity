@@ -20,22 +20,22 @@ listenerVel = (0, 0, 0)
 listenerOri = (0, 0, -1, 0, -1, 0)
 
 ZORK = """
-      ██████  ██▓███   ▄▄▄       ▄████▄  ▓█████     ▒█████  ▓█████▄ ▓█████▄  ██▓▄▄▄█████▓▓██   ██▓
-    ▒██    ▒ ▓██░  ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀    ▒██▒  ██▒▒██▀ ██▌▒██▀ ██▌▓██▒▓  ██▒ ▓▒ ▒██  ██▒
-    ░ ▓██▄   ▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ▒███      ▒██░  ██▒░██   █▌░██   █▌▒██▒▒ ▓██░ ▒░  ▒██ ██░
-      ▒   ██▒▒██▄█▓▒ ▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄    ▒██   ██░░▓█▄   ▌░▓█▄   ▌░██░░ ▓██▓ ░   ░ ▐██▓░
-    ▒██████▒▒▒██▒ ░  ░ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒   ░ ████▓▒░░▒████▓ ░▒████▓ ░██░  ▒██▒ ░   ░ ██▒▓░
-    ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░   ░ ▒░▒░▒░  ▒▒▓  ▒  ▒▒▓  ▒ ░▓    ▒ ░░      ██▒▒▒ 
-    ░ ░▒  ░ ░░▒ ░       ▒   ▒▒ ░  ░  ▒    ░ ░  ░     ░ ▒ ▒░  ░ ▒  ▒  ░ ▒  ▒  ▒ ░    ░     ▓██ ░▒░ 
-    ░  ░  ░  ░░         ░   ▒   ░           ░      ░ ░ ░ ▒   ░ ░  ░  ░ ░  ░  ▒ ░  ░       ▒ ▒ ░░  
-          ░                 ░  ░░ ░         ░  ░       ░ ░     ░       ░     ░            ░ ░     
-                                ░                            ░       ░                    ░ ░     
+          ██████  ██▓███   ▄▄▄       ▄████▄  ▓█████     ▒█████  ▓█████▄ ▓█████▄  ██▓▄▄▄█████▓▓██   ██▓
+        ▒██    ▒ ▓██░  ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀    ▒██▒  ██▒▒██▀ ██▌▒██▀ ██▌▓██▒▓  ██▒ ▓▒ ▒██  ██▒
+        ░ ▓██▄   ▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ▒███      ▒██░  ██▒░██   █▌░██   █▌▒██▒▒ ▓██░ ▒░  ▒██ ██░
+          ▒   ██▒▒██▄█▓▒ ▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄    ▒██   ██░░▓█▄   ▌░▓█▄   ▌░██░░ ▓██▓ ░   ░ ▐██▓░
+        ▒██████▒▒▒██▒ ░  ░ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒   ░ ████▓▒░░▒████▓ ░▒████▓ ░██░  ▒██▒ ░   ░ ██▒▓░
+        ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░   ░ ▒░▒░▒░  ▒▒▓  ▒  ▒▒▓  ▒ ░▓    ▒ ░░      ██▒▒▒ 
+        ░ ░▒  ░ ░░▒ ░       ▒   ▒▒ ░  ░  ▒    ░ ░  ░     ░ ▒ ▒░  ░ ▒  ▒  ░ ▒  ▒  ▒ ░    ░     ▓██ ░▒░ 
+        ░  ░  ░  ░░         ░   ▒   ░           ░      ░ ░ ░ ▒   ░ ░  ░  ░ ░  ░  ▒ ░  ░       ▒ ▒ ░░  
+              ░                 ░  ░░ ░         ░  ░       ░ ░     ░       ░     ░            ░ ░     
+                                    ░                            ░       ░                    ░ ░     
 """
 
 THANKS = """
-                ░▀█▀░█░█░█▀█░█▀█░█░█░█▀▀░░░█▀▀░█▀█░█▀▄░░░█▀█░█░░░█▀█░█░█░▀█▀░█▀█░█▀▀
-                ░░█░░█▀█░█▀█░█░█░█▀▄░▀▀█░░░█▀▀░█░█░█▀▄░░░█▀▀░█░░░█▀█░░█░░░█░░█░█░█░█
-                ░░▀░░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░░░▀░░░▀▀▀░▀░▀░░░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀
+                    ░▀█▀░█░█░█▀█░█▀█░█░█░█▀▀░░░█▀▀░█▀█░█▀▄░░░█▀█░█░░░█▀█░█░█░▀█▀░█▀█░█▀▀
+                    ░░█░░█▀█░█▀█░█░█░█▀▄░▀▀█░░░█▀▀░█░█░█▀▄░░░█▀▀░█░░░█▀█░░█░░░█░░█░█░█░█
+                    ░░▀░░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░░░▀░░░▀▀▀░▀░▀░░░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀
 """
 
 
@@ -66,23 +66,23 @@ class State:
 
 A = State(
     text="""
-    Se abren las puertas de tu camara criogenica. Despertarse de este sueño usualmente toma unos minutos 
-    antes de que tus musculos puedan responder. Pero estas conciente y puedes mover tu boca. 
-    Puedes escuchar alarmas
+    Se abren las puertas de tu cámara criogénica. Despertarse de este sueño usualmente toma unos minutos 
+    antes de que tus músculos puedan responder. Pero estás consciente y puedes mover tu boca. Puedes
+    escuchar alarmas.
 
-    -- Comandante Robinson, lo he despertado de su sueño criogenico ya que se empezo el protocolo de seguridad 
-       R.0.J.0 el cual requiere que un miembro de la tripulacion este despierto. --
+    -- Comandante Robinson, lo he despertado de su sueño criogénico ya que se empezó el protocolo de seguridad 
+       R.0.J.0 el cual requiere que un miembro de la tripulación esté despierto. --
     """,
     options="""
     1) Salir del bloque
-    2) Investigar el bloque de criogenesis
+    2) Investigar el bloque de criogénesis
     """,
 )
 
 B = State(
     text="""
-    Caminas un poco por el pasillo y miras alrededor. Puedes ver las capsulas del resto de la tripulacion. 
-    Hasta donde puedes ver parece que todos siguen en sueño criogenico. Pero el pasillo es largo y no puedes 
+    Caminas un poco por el pasillo y miras alrededor. Puedes ver las cápsulas del resto de la tripulación. 
+    Hasta donde puedes ver parece que todos siguen en sueño criogénico. Pero el pasillo es largo y no puedes 
     ver hasta el final.
     """,
     options="""
@@ -93,31 +93,31 @@ B = State(
 
 C = State(
     text="""
-    Caminas hacia el final del pasillo y puedes ver que en una de las ultimas filas hay otra capsula que esta abierta. 
-    A diferencia de la tuya, esta parece haber sido abierta hace mucho ya que no esta empañada y rodeado de vapor.
+    Caminas hacia el final del pasillo y puedes ver que en una de las últimas filas hay otra cápsula que está abierta. 
+    A diferencia de la tuya, esta parece haber sido abierta hace mucho ya que no esta empañada y rodeada de vapor.
     """,
     options="""
-    1) Examinar capsula
-    2) "Hay alguien ahi?"
+    1) Examinar cápsula
+    2) "Hay alguien ahí?"
     3) Salir del bloque
     """,
 )
 
 D = State(
     text="""
-    Escuchas tu voz rezonar en el pasillo y esperas unos segundos, pero no hay respuesta.
+    Escuchas tu voz resonar en el pasillo y esperas unos segundos, pero no hay respuesta.
     """,
     options="""
-    1) Examinar capsula
+    1) Examinar cápsula
     2) Salir del bloque
     """,
 )
 
 E = State(
     text="""
-    La capsula esta vacia, y en la puerta puedes ver el nombre del tripulante: Srgto. Ryans. Te acuerdas haberlo 
-    visto antes de abordar, era un hombre maciso y sombrio con canas a los lados y un corte militar. El estaba 
-    encargado de la seguridad de la tripulacion.
+    La cápsula está vacía, y en la puerta puedes ver el nombre del tripulante: Srgto. Ryans. Te acuerdas haberlo 
+    visto antes de abordar, era un hombre maciso y sombrio con canas a los lados y un corte militar. Él estaba 
+    encargado de la seguridad de la tripulación.
     """,
     options="""
     1) Salir del bloque
@@ -129,7 +129,7 @@ F = State(
     Entras al hub principal de la nave y puedes ver la luz de las alarmas circular alrededor de las paredes.
     """,
     options="""
-    1) Ir a bloque de criogenesis
+    1) Ir a bloque de criogénesis
     2) Ir al centro de comando
     3) Ir al puerto
     4) Ir a la bodega
@@ -140,7 +140,7 @@ F = State(
 G = State(
     text="""
     El centro de comando tiene la terminal principal de la nave y los controles para navegar la nave. Mirando por 
-    la ventana puedes ver que la nave esta dirigida hacia unos asteroides.
+    la ventana puedes ver que la nave está dirigida hacia unos asteroides.
     """,
     options="""
     1) Usar terminal
@@ -162,8 +162,8 @@ H = State(
 
 I = State(
     text="""
-    El puerto es un pasillo con varias puertas que llevan a las capsulas de escape. Cerca de una de las puertas 
-    puedes ver al androide en el suelo, botando chispas por su pecho. Ademas, puedes ver que una nave se a acoplado 
+    El puerto es un pasillo con varias puertas que llevan a las cápsulas de escape. Cerca de una de las puertas 
+    puedes ver al androide en el suelo, botando chispas por su pecho. Ademas, puedes ver que una nave se ha acoplado 
     al puerto.
     """,
     options="""
@@ -175,7 +175,7 @@ I = State(
 
 J = State(
     text="""
-    El androide tiene rasguños en su pecho de donde emanan las chispas Tiene sus brazos frente a el como si estuviera 
+    El androide tiene rasguños en su pecho de donde emanan las chispas. Tiene sus brazos frente a él como si estuviera 
     tratando de taparse la cara.
     """,
     options="""
@@ -186,12 +186,12 @@ J = State(
 
 K = State(
     text="""
-    Te acercas a la terminal y activas los comandos de vos.
+    Te acercas a la terminal y activas los comandos de voz.
 
-    -- Hola Comandante Robinson, ¿En que te puedo ayudar hoy? --
+    -- Hola Comandante Robinson, ¿En qué te puedo ayudar hoy? --
     """,
     options="""
-    1) Hacer un reporte de la situacion actual
+    1) Hacer un reporte de la situación actual
     2) Enviar un comunicado de ayuda
     3) Volver
     """,
@@ -199,9 +199,9 @@ K = State(
 
 L = State(
     text="""
-    -- Una nave sobre-paso nuestro sistema de seguridad y logro parquear su nave en nuestro puerto. 
-       Perdi comunicacion con el androide CG42 hace 5 horas, durante ese tiempo activé el protocolo R0J0, 
-       parando el vuelo de hiperespacio y el estado criogenico del comandante para investigar. --
+    -- Una nave sobrepasó nuestro sistema de seguridad y logró parquear su nave en nuestro puerto. 
+       Perdí comunicación con el androide CG42 hace 5 horas. Durante ese tiempo activé el protocolo R0J0, 
+       parando el vuelo de hiperespacio y el estado criogénico del comandante para investigar. --
       """,
     options="""
     1) Volver
@@ -210,30 +210,29 @@ L = State(
 
 M = State(
     text="""
-    -- En esta zona solo hay naves volando en hiperespacio y por tanto tambien debe estar dormida su tripulacion. --
+    -- En esta zona solo hay naves volando en hiperespacio y por tanto también debe estar dormida su tripulación. --
     """,
     options="1) Volver",
 )
 
 N = State(
     text="""
-    Al entrar el la bodega puedes observar que varias de las cajas han sido movidas y escuchas una respiracion a la distancia.
+    Al entrar el la bodega puedes observar que varias de las cajas han sido movidas y escuchas una respiración
+    a la distancia.
     """,
     options="""
     1) Volver
-    2) Ir hacia la respiracion
+    2) Ir hacia la respiración
     """,
 )
 
 O = State(
     text="""
     Sigues derecho, moviendote hacia donde viene el sonido. Detras de una caja puedes ver una figura arrodillada 
-    encima del cuerpo de un miembro de la tripulacion. Puedes ver como esta escarvando dentro de sus entrañas como 
-    si estuviera buscando algo! Se voltea lentamente para mirarte...
+    encima del cuerpo de un miembro de la tripulación. Puedes ver como está escarvando dentro de sus entrañas
+    como si estuviera buscando algo! Se voltea lentamente para mirarte...
     """,
-    options="""
-    1) Morir
-    """,
+    options="",
 )
 
 T = State(isTerminal=True)
@@ -251,7 +250,6 @@ I.sources[0].set_looping(True)
 F.sources[0].set_looping(True)
 G.sources[0].set_looping(True)
 J.sources[0].set_looping(True)
-# I.sources[0].set_gain(0.4)
 
 A.sources[0].set_position((10, 5, 5))
 A.sources[1].set_position((0, 5, 5))
@@ -260,12 +258,13 @@ C.sources[0].set_position((0, 0, 3))
 F.sources[0].set_position((0, 5, 1))
 F.sources[0].set_gain(0.2)
 G.sources[0].set_position((5, 1, 6))
+G.sources[0].set_gain(0.4)
 H.sources[0].set_position((0, -1, 1))
 H.sources[1].set_position((0, 0, 0))
 I.sources[0].set_position((0, 0, 10))
 I.sources[0].set_gain(0.2)
 J.sources[0].set_position((0, 0, 1))
-I.sources[0].set_gain(0.8)
+J.sources[0].set_gain(0.7)
 K.sources[0].set_position((5, 5, 5))
 L.sources[0].set_position((0, 5, 1))
 M.sources[0].set_position((0, 5, 1))
@@ -308,11 +307,11 @@ def startGame():
     print(ZORK)
     print("""
     ----------------------------------------------------------------------------------------------------
-    |    Estas abordo del SS Olivo, una nave transportadora de cargamento de minerales recolectados    |
-    |    en asteroides. Tu mision era la de recoger el cargamento en la galaxia de Miphokos y llevarlo |
+    |    Estás abordo del SS Olivo, una nave transportadora de cargamento de minerales recolectados    |
+    |    en asteroides. Tu misión era la de recoger el cargamento en la galaxia de Miphokos y llevarlo |
     |    de vuelta a la tierra. Este viaje usualmente toma 20 años viajando a la velocidad de la luz.  |
-    |    Para esto la tripulacion debe estar bajo un sueño criogenico ya que viajar a esta velocidad   |
-    |    despierto usualmente termina en efectos detrimentales a la salud mental de la tripulacion.    |
+    |    Para esto la tripulación debe estar bajo un sueño criogénico, ya que viajar a esta velocidad  |
+    |    despierto usualmente termina en efectos detrimentales a la salud mental de la tripulación.    |
     ----------------------------------------------------------------------------------------------------
     """)
     time.sleep(5)
@@ -321,14 +320,21 @@ def startGame():
     while (not current_state.isTerminal):
         clear()
         print(ZORK)
-        if (not avoid_asteroid and trials >= 10):
+        if (not avoid_asteroid and trials >= 15):
             print("""
                     La nave ha colisionado con un asteroide y has muerto.
-    """)
-            time.sleep(3)
+                """)
+            time.sleep(5)
             break
         print(current_state.text)
         current_state.playSources()
+        if (current_state.options == ""):
+            print("""
+    Esta criatura te ha devorado vivo.
+                """)
+            print()
+            input("Presione Enter para finalizar el juego.")
+            break
         print(current_state.options)
         if (current_state == H):
             G.children = [K, F]
@@ -368,21 +374,21 @@ def mainMenu():
     source.play()
     print(ZORK)
     print("""
-                                ░▀█░░▀▄░░░░█▀█░█░░░█▀█░█░█
-                                ░░█░░░█░░░░█▀▀░█░░░█▀█░░█░
-                                ░▀▀▀░▀░░░░░▀░░░▀▀▀░▀░▀░░▀░
+                                    ░▀█░░▀▄░░░░█▀█░█░░░█▀█░█░█
+                                    ░░█░░░█░░░░█▀▀░█░░░█▀█░░█░
+                                    ░▀▀▀░▀░░░░░▀░░░▀▀▀░▀░▀░░▀░
     """)
 
     print("""
-                                ░▀▀▄░▀▄░░░░█▀█░█▀█░▀█▀░▀█▀░█▀█░█▀█░█▀▀
-                                ░▄▀░░░█░░░░█░█░█▀▀░░█░░░█░░█░█░█░█░▀▀█
-                                ░▀▀▀░▀░░░░░▀▀▀░▀░░░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀
+                                    ░▀▀▄░▀▄░░░░█▀█░█▀█░▀█▀░▀█▀░█▀█░█▀█░█▀▀
+                                    ░▄▀░░░█░░░░█░█░█▀▀░░█░░░█░░█░█░█░█░▀▀█
+                                    ░▀▀▀░▀░░░░░▀▀▀░▀░░░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀
     """)
 
     print("""
-                                ░▀▀█░▀▄░░░░█▀▀░█░█░▀█▀░▀█▀
-                                ░░▀▄░░█░░░░█▀▀░▄▀▄░░█░░░█░
-                                ░▀▀░░▀░░░░░▀▀▀░▀░▀░▀▀▀░░▀░
+                                    ░▀▀█░▀▄░░░░█▀▀░█░█░▀█▀░▀█▀
+                                    ░░▀▄░░█░░░░█▀▀░▄▀▄░░█░░░█░
+                                    ░▀▀░░▀░░░░░▀▀▀░▀░▀░▀▀▀░░▀░
     """)
 
     valid = False
@@ -394,9 +400,9 @@ def mainMenu():
             print("""
 
 
-                            ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀
-                            ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█
-                            ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀
+                                ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀
+                                ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█
+                                ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀
             """)
             time.sleep(1)
             clear()
@@ -404,9 +410,9 @@ def mainMenu():
             print("""
 
 
-                            ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀░░░
-                            ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█░░░
-                            ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░
+                                ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀░░░
+                                ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█░░░
+                                ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░
             """)
             time.sleep(1)
             clear()
@@ -414,9 +420,9 @@ def mainMenu():
             print("""
 
 
-                            ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀░░░░░░
-                            ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█░░░░░░
-                            ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░░▀░
+                                ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀░░░░░░
+                                ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█░░░░░░
+                                ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░░▀░
             """)
             time.sleep(1)
             clear()
@@ -424,9 +430,9 @@ def mainMenu():
             print("""
 
 
-                            ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀░░░░░░░░░
-                            ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█░░░░░░░░░
-                            ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░░▀░░▀░
+                                ░█▀▀░▀█▀░█▀█░█▀▄░▀█▀░▀█▀░█▀█░█▀▀░░░░░░░░░
+                                ░▀▀█░░█░░█▀█░█▀▄░░█░░░█░░█░█░█░█░░░░░░░░░
+                                ░▀▀▀░░▀░░▀░▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░░▀░░▀░
             """)
             time.sleep(1)
             clear()
@@ -476,8 +482,6 @@ def main():
     clear()
 
     mainMenu()
-
-    oalQuit()
 
 
 if __name__ == '__main__':

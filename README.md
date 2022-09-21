@@ -42,6 +42,10 @@ Follow the steps below to create and activate your virtual environment for this 
 2. Create the environment (if you already did, please go to the next step)
 
    ```
+   pip install virtualenv
+   ```
+
+   ```
    mkdir env
    ```
 
