@@ -33,4 +33,44 @@ To install PyOpenAL we recommend creating an isolated environment for this proje
 
 Follow the steps below to create and activate your virtual environment for this project.
 
-1. Once you have downloaded the project, go to the folder
+1. Once you have downloaded the project's [folder](https://github.com/elkinnarvaez/space-oddity/archive/refs/heads/master.zip), go inside that folder.
+
+   ```
+   cd space-oddity
+   ```
+
+2. Create the environment (if you already did, please go to the next step)
+
+   ```
+   mkdir env
+   ```
+
+   ```
+   virtualenv env
+   ```
+
+3. Initialize environemnt
+
+   ```
+   source env/bin/activate
+   ```
+
+### Install library
+
+To install PyOpenAL you can use pip.
+
+```
+pip install PyOpenAL
+```
+
+## Download sounds
+
+The sounds are a little bit big in size, so we have located them outside this repository. You can download them from [here](https://www.dropbox.com/sh/myas2x5rosyptra/AACQHzOMwTWYZSu8vGaTtB0ca?dl=0). Once you have downloaded them, please place the sound's folder inside the project's folder.
+
+## Run program
+
+Type the following command in your terminal to run the program and start the game.
+
+```
+python space-oddity.py
+```

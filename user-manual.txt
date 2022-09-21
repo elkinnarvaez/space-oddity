@@ -1,0 +1,10 @@
+Como jugar:
+-- El jugador será presentado con un mensaje de texto dando contexto y explicando la situación en la que está
+-- Además, el texto viene acompañado de audio que representa lo que esta pasando a su alrededor
+-- Tras unos momentos, el jugador podrá escoger una seria de opciones enumeradas por ejemplo:
+
+		1) Gritar
+		2) Correr
+
+-- Para escoger una de estas opciones simplemente debe digitar el numero de la opcion en el teclado para pasar
+   de estado

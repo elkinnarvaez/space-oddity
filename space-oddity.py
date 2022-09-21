@@ -20,12 +20,16 @@ listenerVel = (0, 0, 0)
 listenerOri = (0, 0, -1, 0, -1, 0)
 
 ZORK = """
-                    ███████╗ ██████╗ ██████╗ ██╗  ██╗     ██████╗    ███████╗
-                    ╚══███╔╝██╔═══██╗██╔══██╗██║ ██╔╝    ██╔═████╗   ██╔════╝
-                      ███╔╝ ██║   ██║██████╔╝█████╔╝     ██║██╔██║   ███████╗
-                     ███╔╝  ██║   ██║██╔══██╗██╔═██╗     ████╔╝██║   ╚════██║
-                    ███████╗╚██████╔╝██║  ██║██║  ██╗    ╚██████╔╝██╗███████║
-                    ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝     ╚═════╝ ╚═╝╚══════╝
+      ██████  ██▓███   ▄▄▄       ▄████▄  ▓█████     ▒█████  ▓█████▄ ▓█████▄  ██▓▄▄▄█████▓▓██   ██▓
+    ▒██    ▒ ▓██░  ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀    ▒██▒  ██▒▒██▀ ██▌▒██▀ ██▌▓██▒▓  ██▒ ▓▒ ▒██  ██▒
+    ░ ▓██▄   ▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ▒███      ▒██░  ██▒░██   █▌░██   █▌▒██▒▒ ▓██░ ▒░  ▒██ ██░
+      ▒   ██▒▒██▄█▓▒ ▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄    ▒██   ██░░▓█▄   ▌░▓█▄   ▌░██░░ ▓██▓ ░   ░ ▐██▓░
+    ▒██████▒▒▒██▒ ░  ░ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒   ░ ████▓▒░░▒████▓ ░▒████▓ ░██░  ▒██▒ ░   ░ ██▒▓░
+    ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░   ░ ▒░▒░▒░  ▒▒▓  ▒  ▒▒▓  ▒ ░▓    ▒ ░░      ██▒▒▒ 
+    ░ ░▒  ░ ░░▒ ░       ▒   ▒▒ ░  ░  ▒    ░ ░  ░     ░ ▒ ▒░  ░ ▒  ▒  ░ ▒  ▒  ▒ ░    ░     ▓██ ░▒░ 
+    ░  ░  ░  ░░         ░   ▒   ░           ░      ░ ░ ░ ▒   ░ ░  ░  ░ ░  ░  ▒ ░  ░       ▒ ▒ ░░  
+          ░                 ░  ░░ ░         ░  ░       ░ ░     ░       ░     ░            ░ ░     
+                                ░                            ░       ░                    ░ ░     
 """
 
 THANKS = """
@@ -36,16 +40,16 @@ THANKS = """
 
 
 class State:
-    def __init__(self, text="", options="", isTerminal=False, sourcesInBackdound=False):
+    def __init__(self, text="", options="", isTerminal=False, sourcesInBackground=False):
         self.text = text
         self.options = options
         self.sources = []
         self.children = []
         self.isTerminal = isTerminal
-        self.sourcesInBackground = sourcesInBackdound
+        self.sourcesInBackground = sourcesInBackground
 
     def playSources(self):
-        if (self.sourcesInBackgorund):
+        if (self.sourcesInBackground):
             for source in self.sources:
                 source.play()
         else:
@@ -55,7 +59,7 @@ class State:
                     time.sleep(1)
 
     def stopSources(self):
-        if (self.sourcesInBackgorund):
+        if (self.sourcesInBackground):
             for source in self.sources:
                 source.stop()
 
@@ -130,6 +134,7 @@ F = State(
     3) Ir al puerto
     4) Ir a la bodega
     """,
+    sourcesInBackground=True,
 )
 
 G = State(
@@ -142,6 +147,7 @@ G = State(
     2) Pilotear la nave
     3) Volver al hub
     """,
+    sourcesInBackground=True,
 )
 
 H = State(
@@ -164,7 +170,7 @@ I = State(
     1) Inspeccionar androide
     2) Inspeccionar puerta
     """,
-    sourcesInBackdound=True,
+    sourcesInBackground=True,
 )
 
 J = State(
@@ -175,6 +181,7 @@ J = State(
     options="""
     1) Volver
     """,
+    sourcesInBackground=True,
 )
 
 K = State(
@@ -233,7 +240,7 @@ T = State(isTerminal=True)
 
 states = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O]
 
-soundTracks = [['A1.wav', 'A2.wav'], ['B1.wav'], ['C1.wav'], ['D1.wav'], ['E1.wav'], [], [], [
+soundTracks = [['A1.wav', 'A2.wav'], ['B1.wav'], ['C1.wav'], ['D1.wav'], ['E1.wav'], ['F1.wav'], ['G1.wav'], [
     'H1.wav', 'H2.wav'], ['I1.wav'], ['J1.wav'], ['K1.wav'], ['L1.wav'], ['M1.wav'], ['N1.wav', 'N2.wav'], ['O1.wav']]
 
 for i in range(len(states)):
@@ -241,7 +248,32 @@ for i in range(len(states)):
         states[i].sources.append(oalOpen("sounds/{0}".format(file)))
 
 I.sources[0].set_looping(True)
-I.sources[0].set_gain(0.4)
+F.sources[0].set_looping(True)
+G.sources[0].set_looping(True)
+J.sources[0].set_looping(True)
+# I.sources[0].set_gain(0.4)
+
+A.sources[0].set_position((10, 5, 5))
+A.sources[1].set_position((0, 5, 5))
+B.sources[0].set_position((0, 0, 1))
+C.sources[0].set_position((0, 0, 3))
+F.sources[0].set_position((0, 5, 1))
+F.sources[0].set_gain(0.2)
+G.sources[0].set_position((5, 1, 6))
+H.sources[0].set_position((0, -1, 1))
+H.sources[1].set_position((0, 0, 0))
+I.sources[0].set_position((0, 0, 10))
+I.sources[0].set_gain(0.2)
+J.sources[0].set_position((0, 0, 1))
+I.sources[0].set_gain(0.8)
+K.sources[0].set_position((5, 5, 5))
+L.sources[0].set_position((0, 5, 1))
+M.sources[0].set_position((0, 5, 1))
+N.sources[0].set_gain(0.5)
+N.sources[0].set_position((1, 1, 1))
+N.sources[1].set_position((5, 0, 15))
+O.sources[0].set_position((5, -1, 5))
+
 
 A.children = [F, B]
 B.children = [F, C]
@@ -266,6 +298,8 @@ def clear():
 
 
 def startGame():
+    trials = 0
+    avoid_asteroid = False
     source = oalOpen(
         "sounds/initial-state.wav")
     source.set_gain(0.1)
@@ -287,6 +321,12 @@ def startGame():
     while (not current_state.isTerminal):
         clear()
         print(ZORK)
+        if (not avoid_asteroid and trials >= 10):
+            print("""
+                    La nave ha colisionado con un asteroide y has muerto.
+    """)
+            time.sleep(3)
+            break
         print(current_state.text)
         current_state.playSources()
         print(current_state.options)
@@ -299,6 +339,7 @@ def startGame():
     1) Usar terminal
     2) Volver al hub
             """
+            avoid_asteroid = True
         valid = False
         while (not valid):
             option = input("Your option: ")
@@ -312,6 +353,7 @@ def startGame():
                     valid = True
             except:
                 print('Por favor ingrese una opción correcta.')
+        trials += 1
 
 
 def gameOptions():
